@@ -4,11 +4,12 @@ import { isbot } from 'isbot';
 import { renderHeadToString } from 'remix-island';
 import { Head } from './root';
 import { themeStore } from '~/lib/stores/theme';
-import pkg from 'react-dom/server';
+import { renderToReadableStream } from 'react-dom/server';
 
-// import { renderToReadableStream } from 'react-dom/server';
-
-const { renderToReadableStream } = pkg;
+/*
+ * import pkg from 'react-dom/server';
+ * const { renderToReadableStream } = pkg;
+ */
 
 export default async function handleRequest(
   request: Request,
