@@ -33,6 +33,14 @@ export default class GoogleProvider extends BaseProvider {
       maxTokenAllowed: 1000000,
       maxCompletionTokens: 8192,
     },
+
+    {
+      name: 'gemini-3-pro-preview',
+      label: 'Gemini 3 Pro',
+      provider: 'Google',
+      maxTokenAllowed: 1048576,
+      maxCompletionTokens: 65536,
+    }
   ];
 
   async getDynamicModels(
