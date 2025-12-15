@@ -34,14 +34,14 @@ export default class GoogleProvider extends BaseProvider {
       maxCompletionTokens: 8192,
     },
 
-    {
-      name: 'gemini-3-pro-preview',
-      label: 'Gemini 3 Pro',
-      provider: 'Google',
-      maxTokenAllowed: 1000000,
-      maxOutputTokens: 65536,      // Common in older Bolt forks
-      maxCompletionTokens: 65536,
-    }
+    // {
+    //   name: 'gemini-3-pro-preview',
+    //   label: 'Gemini 3 Pro',
+    //   provider: 'Google',
+    //   maxTokenAllowed: 1000000,
+    //   maxOutputTokens: 65536,      // Common in older Bolt forks
+    //   maxCompletionTokens: 65536,
+    // }
   ];
 
   async getDynamicModels(
