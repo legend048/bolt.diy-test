@@ -39,6 +39,7 @@ export default class GoogleProvider extends BaseProvider {
       label: 'Gemini 3 Pro',
       provider: 'Google',
       maxTokenAllowed: 1048576,
+      maxOutputTokens: 65536,      // Common in older Bolt forks
       maxCompletionTokens: 65536,
     }
   ];
